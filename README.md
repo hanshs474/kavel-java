@@ -48,8 +48,8 @@ Kavel.create().credits();   // remaining/grant for a fresh client id, costs noth
 ```
 
 On 2026-10-02 a fresh client id was granted **5 credits**, and one generated image spent all five. The
-client mints a new id per call. A per-machine daily ceiling sits on top of that, and hitting it
-raises `QUOTA`. Free output is 1K and watermarked, and free runs wait in a queue before the model starts
+client mints a new id per call. A per-machine daily ceiling sits on top of that (two images from one IP
+that day), and hitting it raises `QUOTA`. Free output is 1K and watermarked, and free runs wait in a queue before the model starts
 (a test call that day took 72 seconds end to end), so the default deadline is six minutes.
 
 ## Editing a photo you already have
